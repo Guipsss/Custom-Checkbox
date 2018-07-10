@@ -28,6 +28,9 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     background-color: $cor2;
+    -webkit-transition: background ease 200ms;
+    -moz-transition: background ease 200ms;
+    transition: background ease 200ms;
 }
 
 .form-item {
@@ -42,9 +45,9 @@ body {
             -webkit-transform: scale(1,1);
             -moz-transform: scale(1,1);
             transform: scale(1,1);
-            -webkit-transition: transform 200ms ease;
-            -moz-transition: transform 200ms ease;
-            transition: transform 200ms ease;
+            -webkit-transition: transform 200ms ease, background-color ease 200ms;
+            -moz-transition: transform 200ms ease, background-color ease 200ms;
+            transition: transform 200ms ease, background-color ease 200ms;
             }
             
             & > i {
@@ -69,7 +72,10 @@ body {
         & > span {
             padding: 2px 10px 2px 10px;
             color: $cor4;
-            font-size: 30px
+            font-size: 30px;
+            -webkit-transition: color ease 200ms;
+            -moz-transition: color ease 200ms;
+            transition: color ease 200ms;
         }
         
         .custom-checkbox {
@@ -78,6 +84,9 @@ body {
             outline: 2px solid $cor4;
             position: relative;
             overflow: hidden;
+            -webkit-transition: outline ease 200ms;
+            -moz-transition: outline ease 200ms;
+            transition: outline ease 200ms;
         
             & > span {
                 width: 100%;
